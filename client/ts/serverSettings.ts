@@ -1,2 +1,2 @@
-const SERVER_ENDPOINT = 'localhost:3000';
+const SERVER_ENDPOINT = 'https://watt-center-snake.herokuapp.com';
 export default SERVER_ENDPOINT;
