@@ -8,6 +8,7 @@
   },
   "author": "Sloan Nietert",
   "license": "MIT",
+  "main": "server/server.js",
   "bugs": {
     "url": "https://github.com/sbnietert/watt-center-snake/issues"
   },
