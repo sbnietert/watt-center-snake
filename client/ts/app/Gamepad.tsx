@@ -14,7 +14,6 @@ interface IGamepadState {
 }
 
 export class Gamepad extends React.Component<IGamepadProps, IGamepadState> {
-
     constructor(props: IGamepadProps) {
         super(props);
         this.state = {

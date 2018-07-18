@@ -18,20 +18,17 @@ export class AppContainer extends React.Component<{}, IAppContainerState> {
     }
 
     public componentWillMount() {
-        console.log('mounting');
-        socket.on('message', (type: string) => {
-            if (type === 'playing') {
-                this.setState({ playing: true });
-            }
-            if (type === 'stop-playing') {
-                this.setState({ playing: false });
-            }
-            console.log(type);
-        });
+      socket.on('message', (type: string) => {
+          if (type === 'playing') {
+              this.setState({ playing: true });
+          }
+          if (type === 'stop-playing') {
+              this.setState({ playing: false });
+          }
+      });
     }
 
     public render() {
-        return this.state.playing ?
-            <Gamepad socket={socket}/> : <PasscodeInput socket={socket}/>;
+        return this.state.playing ? <Gamepad socket={socket}/> : <PasscodeInput socket={socket}/>;
     }
 }
