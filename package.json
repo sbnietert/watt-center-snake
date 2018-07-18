@@ -1,0 +1,34 @@
+{
+  "name": "watt-center-snake",
+  "version": "0.1.0",
+  "description": "Simple snake game for Clemson's Watt Center exterior media lights, controlled from mobile website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbnietert/watt-center-snake.git"
+  },
+  "author": "Sloan Nietert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sbnietert/watt-center-snake/issues"
+  },
+  "homepage": "https://github.com/sbnietert/watt-center-snake#readme",
+  "dependencies": {
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "@types/socket.io-client": "^1.4.32",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-externals-plugin": "^3.8.0",
+    "html-webpack-plugin": "^3.2.0",
+    "parcel-bundler": "^1.9.7",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "socket.io-client": "^2.1.1",
+    "style-loader": "^0.21.0",
+    "ts-loader": "^4.4.2",
+    "typescript": "^2.9.2",
+    "typings-for-css-modules-loader": "^1.7.0",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8"
+  }
+}
