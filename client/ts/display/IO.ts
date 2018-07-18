@@ -1,4 +1,5 @@
 import * as io from 'socket.io-client';
+import SERVER_ENDPOINT from '../serverSettings';
 type SocketListener = (socketId: string, event: string) => void;
 
 export class IO {
@@ -6,7 +7,7 @@ export class IO {
     private socket: SocketIOClient.Socket;
 
     constructor() {
-        this.socket = io.connect('ec2-34-217-61-183.us-west-2.compute.amazonaws.com:3000/display');
+        this.socket = io.connect(SERVER_ENDPOINT + '/display');
     }
 
     public addListener(listener: SocketListener) {
@@ -23,6 +24,5 @@ export class IO {
 
     public sendMessage(socketId: string, message: string) {
         this.socket.emit(socketId, message);
-        console.log(socketId, message);
     }
 }

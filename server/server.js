@@ -1,10 +1,10 @@
-import * as express from 'express';
-import { createServer, Server } from 'http';
-import * as socketIO from 'socket.io';
-import * as middleware from 'socketio-wildcard';
+const express = require('express');
+const http = require('http');
+const socketIO = require('socket.io');
+const middleware = require('socketio-wildcard');
 
 const expressApp = express();
-const server = createServer(expressApp);
+const server = http.createServer(expressApp);
 const io = socketIO(server);
 const app = io.of('app');
 app.use(middleware());
