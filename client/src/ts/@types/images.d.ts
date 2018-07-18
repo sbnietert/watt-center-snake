@@ -1,1 +1,1 @@
-declare module '*.png'; // lets typescript linter know that images can be imported
+declare module '*.png'; // keeps typescript linter from complaining about image imports
