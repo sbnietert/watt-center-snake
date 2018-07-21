@@ -5,7 +5,7 @@ const middleware = require('socketio-wildcard');
 
 const expressApp = express();
 const server = http.createServer(expressApp);
-const io = socketIO(server, { origins: '*:*' });
+const io = socketIO(server);
 const app = io.of('app');
 app.use(middleware());
 const display = io.of('display');

@@ -29,6 +29,7 @@
   "scripts": {
     "build-client": "npx parcel build client/*.html --public-url ./",
     "start-client": "npx parcel client/*.html",
-    "start-server": "node server/server.js"
+    "start-server": "node server/server.js",
+    "start": "node server/server.js"
   }
 }
