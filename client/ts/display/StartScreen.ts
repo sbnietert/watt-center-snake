@@ -19,7 +19,7 @@ export class StartScreen extends GameState {
     public draw(): void {
         this.fillScreen('white');
         this.ctx.g2D.drawImage(this.logo, 6, 6);
-        this.drawText('cuhack.it/play ' + this.passcode, 108, 12, 'black', 48);
+        this.drawText('cuhack.it/play ' + this.passcode, 108, 12, 'black', 45);
     }
 
     public start(): void {

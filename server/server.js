@@ -11,8 +11,10 @@ app.use(middleware());
 const display = io.of('display');
 display.use(middleware());
 
-const port = process.env.PORT || 3000;
-server.listen(port);
+const PORT= process.env.PORT || 3000;
+
+server.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+
 const appSockets = {};
 app.on('connection', (socket) => {
     appSockets[socket.id] = socket;
